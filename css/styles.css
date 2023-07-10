@@ -1,0 +1,202 @@
+/* En este archivo escriban su CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-color: beige;    
+}
+
+header{
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    display: table;
+    box-shadow: 1px 1px 5px;
+    background-color: #acb0ad;
+    position: fixed;  
+}
+
+#inicio {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    padding-top: 5%;
+     
+}
+
+.menu{
+    margin-bottom: 2%;
+    margin-right: 2%; 
+}
+
+nav li {
+    margin-left: 10px;
+    float: left;
+    padding:10px;
+    display: inline-flex;
+    cursor: pointer;
+    float: right;  
+}
+
+nav li:hover { background-color: white;
+    border-radius: 5px;
+}
+
+nav h2 {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+}
+
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 2000px;
+    margin: 80px;
+    padding-top: 150px;
+    line-height: 1.5;
+    margin-top: 0;
+    text-align: center;   
+}
+
+section{
+    text-align: center;
+}
+
+#imagen-ovalada{
+    width: 200px;
+    height: 200px;
+    object-fit: cove;
+    border-radius: 50%;    
+}
+
+.boton{
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #5dc1b9;
+    border-radius:35px; 
+}
+.boton:hover{
+    background-color: #acb0ad;
+
+  }
+
+.hablemos{
+    background-color: #5dc1b9;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: justify;       
+    }
+
+.Habilidades{
+    background-color: #acb0ad;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: justify;
+}
+
+.Hobby{
+    background-color: #5dc1b9;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: justify
+
+}
+
+.Actualmente {
+    background-color: #acb0ad ;
+    padding-top:40px;
+    padding-bottom:60px;
+    padding-left:40px;
+    padding-right:40px;
+    border-radius:100px;
+    }
+
+#contacto {
+    margin-top: 5%;
+}
+
+#contacto a {
+    padding: 5%;
+
+}
+
+#contacto h2{
+    background-color: #5dc1b9;
+}
+
+article{padding-top: 40px; padding-bottom: 60px;}
+
+
+
+footer {
+     color: black;
+     background-color: #acb0ad;
+     padding-top: 20px;
+     padding-bottom: 20px; 
+     padding-right: 20px;
+     padding-left: 20px;
+     text-align: center;
+     box-shadow: 2px 3px 2px 4px;
+    }
+
+#codigopalante{
+        border-radius: 15%;
+}
+   
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 1024px) {
+        section#inicio{
+        flex-direction: row;
+    }
+
+    article.presentacion{
+        text-align: left ;
+        width: 100%;
+        padding-left: 5%;
+
+    }
+    body {
+        background-color: rgb(242, 213, 248);
+    }
+
+
+}
+
+
+
