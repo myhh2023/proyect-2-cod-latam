@@ -45,7 +45,16 @@ nav li {
     float: right;  
 }
 
-nav li:hover { background-color: white;
+li .active{
+    background-color: #5dc1b9;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-decoration: underline;
+    text-decoration-color: black;   
+}
+
+nav li:hover {
+    background-color: #5dc1b9;
     border-radius: 5px;
 }
 
